@@ -2,7 +2,7 @@
 
 <suite name="Regression" verbose="1" >
 
-    <test name="CostcoSuite">
+    <test name="CostcoPages">
         <classes>
             <class name="CostcoHomePageTest"/>
             <class name="CostcoCartPageTest"/>

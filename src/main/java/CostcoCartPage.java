@@ -12,7 +12,7 @@ public class CostcoCartPage extends Base{
 //    public CostcoCartPage(WebDriver driver) {
 //        PageFactory.initElements(driver, this);
 //    }
-
+//
 
     @FindBy(css = "input[name='continue-shopping']")
     WebElement continueShoppingButton;
