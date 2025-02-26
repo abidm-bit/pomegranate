@@ -4,12 +4,13 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
+
 public class CostcoHomePageTest extends Base{
     CostcoHomePage chp;
 
     @BeforeMethod
     void setUp(){
-    //  going to feed this in the runner.xml later
         invokeBrowser("https://www.costco.com/");
         chp = PageFactory.initElements(driver, CostcoHomePage.class);
     }
@@ -19,11 +20,11 @@ public class CostcoHomePageTest extends Base{
         chp.logo();
     }
 
-    // going to feed products into the search parameter using DataProvider
-    // ? fetch from a DB -> 2D array -> DataProvider ?
+
     @Test(priority = 1)
     void search(){
         chp.search4Product("tv");
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.costco.com/s?keyword=tv");
     }
 
     @AfterMethod
