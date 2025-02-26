@@ -20,7 +20,8 @@ public class CostcoHomePageTest extends Base{
     }
 
     // going to feed products into the search parameter using DataProvider
-    // ? fetch from a DB -> 2D array -> DataProvider ?
+    // or fetch from a db , maybe a sqlite db in this project
+    // fetch from a DB -> 2D array -> DataProvider
     @Test(priority = 1)
     void search(){
         chp.search4Product("tv");
