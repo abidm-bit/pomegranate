@@ -8,7 +8,7 @@ import java.time.Duration;
 import java.util.List;
 
 
-public class CostcoHomePage extends Base {
+public class CostcoHomePage {
 
     /*
      initialize pages per class, in class instead of the test classes ?
@@ -24,7 +24,6 @@ public class CostcoHomePage extends Base {
     public WebElement searchBox;
 
     public void logo(){
-        explicitlyWait(logo);
        Assert.assertTrue(logo.isDisplayed());
     }
 
