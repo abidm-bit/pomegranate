@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Ottomashun" verbose="1" >
+    <listeners>
+        <listener class-name="Listener" />
+    </listeners>
+    <test name="Costco:Price sorting check" >
+        <classes>
+            <class name="CostcoHolidayGiftsTest" />
+            <parameter name="url" value="https://www.costco.com/holiday-gifts.html?keyword=OFF"/>
+        </classes>
+    </test>
+
+<!--    <test name="searchBox + POI">-->
+<!--        <classes>-->
+<!--            <class name="CostcoHomePageTest"/>-->
+<!--            <parameter name="url" value="https://www.costco.com/"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+</suite>
