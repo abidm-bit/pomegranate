@@ -22,6 +22,13 @@ public class CostcoHomePageTest extends Base{
         };
     }
 
+    /*
+    GIVEN COSTCO'S HOMEPAGE IS LOADED
+    WHEN A USER SEARCHES FOR CERTAIN KEYWORDS
+    AS PROVIDED IN THE DATAPROVIDER 2D ARRAY,
+    THE USER WILL SEE THE EXPECTED URL
+    */
+
     @Test(dataProvider = "product")
     void verifySearchUrl(String keyword,String url) throws InterruptedException {
         chp.searchFor(keyword,url);
